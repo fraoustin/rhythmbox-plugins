@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.rhythmbox.plugins.remember-the-rhythm" path="/org/gnome/rhythmbox/plugins/remember-the-rhythm/">
+    <key type="s" name="last-entry-location">
+      <default>''</default>
+      <summary>Location of the last playing entry</summary>
+      <description>This entry will be automatically played by rhythmbox upon startup.</description>
+    </key>
+    <key type="u" name="playback-time">
+      <default>0</default>
+      <summary>Playback time of the last playing entry</summary>
+      <description>Rhythmbox will resume playback from this second.</description>
+    </key>
+    <key type="aas" name="browser-values">
+      <default>[]</default>
+      <summary>Genre/Artist/Album</summary>
+      <description>Remembers the filters in RBLibraryBrowser and sets on start up.</description>
+    </key>
+    <key type="s" name="playlist">
+      <default>''</default>
+      <summary>Last playlist</summary>
+      <description>Name of the last playing playlist if any.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,10 @@
+[Plugin]
+Loader=python3
+Module=only-toolbar
+IAge=2
+Name=View Only ToolBar
+Name[fr]=Seulement la barre de lecture
+Description=Compact rhythmbox view only toolbar
+Authors=Frederic Aoustin <fraoustin@gmail.com>
+Copyright=None
+Website=https://github.com/fraoustin/only-toolbar
