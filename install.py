@@ -29,7 +29,7 @@ def install(plugin):
     install_path = os.path.expanduser(os.path.join(PLUGINS_PATH,plugin))
     shutil.copytree(source_path, install_path)
     print(source_path, install_path)
-    if os.path.exists(os.path.join(PLUGINS_PATH, plugin, plugin, 'schemas')):
+    if os.path.exists(os.path.join(PLUGINS_PATH, plugin, 'schemas')):
         print("install schemas for plugin %s" % plugin)
         source_path = os.path.join('.', plugin , 'schemas')
         call(['sudo', 'cp', source_path, GLIB_PATH])
