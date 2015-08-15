@@ -5,7 +5,7 @@ my plugins for rhythmbox
 
 ![only-toolbar action](https://github.com/fraoustin/rhythmbox-plugins/blob/master/only-toolbar/images/onlytoolbar.png)
 
-
+Use F12 or menu view/view only toolbar
 
 # Remember The Rhythm
 
