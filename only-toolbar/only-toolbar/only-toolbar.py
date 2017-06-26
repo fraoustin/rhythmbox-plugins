@@ -69,6 +69,8 @@ class OnlyToolBar(GObject.Object, Peas.Activatable):
         item = Gio.MenuItem.new(label="view only toolbar", detailed_action="win.view-only-toolbar")
         self.app.add_plugin_menu_item("view", "view-only-toolbar", item)
         self.app.add_accelerator("F12", "win.view-only-toolbar", None)
+        #add compatibility 3.4.1
+        self.app.set_accels_for_action("win.view-only-toolbar", ["F12",])
         self._height = self.win.get_size()[1]
         for child in self.win.get_children()[0]:
             if isinstance(child, Gtk.Buildable):
